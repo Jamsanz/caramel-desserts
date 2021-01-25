@@ -44,7 +44,7 @@ app.post("/",(req, res)=>{
         service
     });
     orderz.save(()=>{
-        res.send(`<script>alert('Thank you for patronizing us'); window.location='http://localhost:3000';</script>`);
+        res.send(`<script>alert('Thank you for patronizing us'); window.location='https://quiet-brushlands-18261.herokuapp.com';</script>`);
     });
 });
 
