@@ -8,7 +8,7 @@ app.use(express.static("Public"));
 
 app.use(bodyParser.urlencoded({extended:true}));
 
-mongoose.connect('mongodb://localhost:27017/caramelDB',{useUnifiedTopology:true, useNewUrlParser:true});
+mongoose.connect( "mongodb+srv://admin-deeni:muha234mmad@cluster0.n2lhm.mongodb.net/caramelDB",{useUnifiedTopology:true, useNewUrlParser:true});
 
 const orderSchema= new mongoose.Schema({
     name: String,
