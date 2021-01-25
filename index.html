@@ -1,0 +1,364 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <script src="fontawesome/js/all.js"></script>
+  <script src="fontawesome/metadata/icons.json"></script>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="css/materialize.css">
+  <title>Caramel Desserts</title>
+  <style>
+    header{
+      background: url(img/CEO.jpg);
+      background-size: cover;
+      background-position:center;
+      max-width: 100%;
+      height: auto;
+      min-height: 700px;
+      z-index:  100;
+    }
+    .tabs .indicator{
+      background: #1a237e;
+    }
+    
+    @media screen and (max-width: 670px) {
+      header{
+        min-height: 600px;
+      }
+    }
+    @media screen and (min-width: 1344px) {
+      header{
+        height: 200vh;
+      }
+    }
+    .hide-on-med-and-up{
+      font-size: 20px !important;
+    }
+    .hide-on-large-only{
+      height: 350px;
+    }
+    .responsive-img{
+      max-width: 100% !important;
+      height: auto !important;
+    }
+    .sidenav-trigger{
+      position: fixed !important;
+    }
+    h1 .white-text{
+      color: black !important;
+    }
+    .resp-img{
+      height: 400;
+    }
+    div.carousel.center{
+      margin-top: -8vh;
+    }
+    .bttn-down{
+      margin-top: 320px;
+      border-radius: 25px !important;
+      z-index: 100 !important;
+    }
+   
+  </style>
+</head>
+<body>
+  
+  <!-- navbar -->
+      <header>
+        <nav class="nav-wrapper transparent">
+          <div class="container">
+            <a href="" class="brand-logo hide-on-small-only">Caramel Desserts</a>
+            <a href="" class="brand-logo hide-on-med-and-up">Caramel Desserts</a>
+
+            <a href="#" data-target="mobile-links" class="sidenav-trigger">
+              <i class="material-icons">menu</i>
+           </a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#photos">Photos</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="https://Instagram.com/caramel_desserts" class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="Instagram"><i style="margin-top:10px;" class="fab fa-instagram"></i></a></li>
+              <li><a href="https://twitter.com/_carameldessert" class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="Twitter"><i style="margin-top:10px;" class="fab fa-twitter"></i></a></li>
+              <li><a href="https://facebook.com/shehusuaida.dalhatu" class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="Facebook"><i style="margin-top:10px;" class="fab fa-facebook"></i></a></li>
+              <li><a href="https://wa.me/2347038236001" class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="Whatsapp Me"><i style="margin-top:10px;" class="fab fa-whatsapp"></i></a></li>
+              <li><a href="" class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="Call me"><i style="margin-top:10px;" class="fa fa-phone"></i></a></li>
+              
+            </ul>
+            <ul class="sidenav grey lighten-2" id="mobile-links">
+              <button class="btn-floating sidenav-close grey lighten-2 black-text right" style="margin-right: 5px; margin-top: 5px;">x</button>
+              <li><a href="#photos" class="sidenav-close">Photos</a></li>
+              <li><a href="#services" class="sidenav-close">Services</a></li>
+              <li><a href="#contact" class="sidenav-close">Contact Me</a></li>
+              <li><a href="#about"  class="sidenav-close">About Me</a></li>
+              <div style="display: flex; flex-wrap: wrap;">
+              <li><a href="https://Instagram.com/caramel_desserts" class="btn-floating btn-small grey lighten-2 z-depth-0 black-text tooltipped" data-tooltip="Instagram"><i style="" class="fab fa-instagram"></i></a></li>
+              <li><a href="https://twitter.com/_carameldessert" class="btn-floating btn-small grey lighten-2 z-depth-0 black-text tooltipped" data-tooltip="Twitter"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://facebook.com/shehusuaida.dalhatu" class="btn-floating btn-small grey lighten-2 z-depth-0 black-text tooltipped" data-tooltip="Facebook"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="https://wa.me/2347038236001" class="btn-floating btn-small grey lighten-2 z-depth-0 black-text tooltipped" data-tooltip="Whatsapp me"><i class="fab fa-whatsapp"></i></a></li>
+              <li><a href="tel:+2347038236001" class="btn-floating btn-small grey lighten-2 z-depth-0 black-text tooltipped" data-tooltip="Call me"><i style="" class="fa fa-phone"></i></a></li>
+              <li><a href="" class="btn-floating btn-small grey lighten-2 z-depth-0 black-text tooltipped" data-tooltip="Mail me"><i class="fa fa-envelope"></i></a></li>
+            </div>
+            </ul>
+          </div>
+          <div class="fixed-action-btn">
+            <a class="btn-floating btn-small indigo darken-4 z-depth-4">
+              <i class="fa fa-link" style="margin-top:10px; margin-left: px;"></i>
+           </a>
+           <ul>
+            <li><a href="https://Instagram.com/caramel_desserts" class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="Instagram"><i style="margin-top:10px;" class="fab fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/_carameldessert" class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="Twitter"><i style="margin-top:10px;" class="fab fa-twitter"></i></a></li>
+            <li><a href="https://facebook.com/shehusuaida.dalhatu" class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="Facebook"><i style="margin-top:10px;" class="fab fa-facebook"></i></a></li>
+            <li><a href="https://wa.me/2347038236001" class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="Whatsapp Me"><i style="margin-top:10px;" class="fab fa-whatsapp"></i></a></li>
+            <li><a href="tel:+2347038236001" class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="Call me"><i style="margin-top:10px;" class="fa fa-phone"></i></a></li>
+           </ul>
+          </div>
+        </nav>     
+      </header>
+  <!-- photo / grid -->
+          <section class="container section scrollspy" id="photos">
+              <div class="row">
+                <div class="col s12 l6">
+                  <div class="carousel center">
+                    <a class="carousel-item"><img class="resp-img" height="400" src="img/41.jpg"></a>
+                    <a class="carousel-item"><img class="resp-img" height="400" src="img/21.jpg"></a>
+                    <a class="carousel-item"><img class="resp-img" height="400" src="img/1.jpg"></a>
+                    <a class="carousel-item"><img class="resp-img" height="400" src="img/2.jpg"></a>
+                    <a class="carousel-item"><img class="resp-img" height="400" src="img/150.jpg"></a>
+                    <a class="carousel-item"><img class="resp-img" height="400" src="img/155.jpg"></a>
+                    <a class="carousel-item"><img class="resp-img" height="400" src="img/154.jpg"></a>
+                    <div class="carousel-fixed-item center">
+                     <a class="btn waves-effect transparent white-text text-darken-4 bttn-down"><i class="material-icons">add_shopping_cart</i></a>
+                    </div>
+                  
+                  </div>
+                </div>
+                <div class="col 12 l5 offset-l1 ">
+                  <h2 class="indigo-text push-s2 text-darken-4">Cakes</h2>
+                    <p> Caramel desserts is here to serve you with the best birthday/wedding cakes because a party without cake is just a meeting. Birthdays/weddings are nature's way of telling us to eat more cake. Life is short, eat the cake. Birthday/wedding cake calories don't count.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12 l6">
+                  <div class="carousel center">
+                    <a class="carousel-item"><img class="resp-img" height="400" src="img/200.jpg"></a>
+                    <a class="carousel-item"><img class="resp-img" height="400" src="img/201.jpg"></a>
+                    <a class="carousel-item"><img class="resp-img" height="400" src="img/202.jpg"></a>
+                    <a class="carousel-item"><img class="resp-img" height="400" src="img/203.jpg"></a>
+                    <a class="carousel-item"><img class="resp-img" height="400" src="img/204.jpg"></a>
+                    <div class="carousel-fixed-item center">
+                     <a class="btn waves-effect transparent white-text text-darken-4 bttn-down"><i class="material-icons">add_shopping_cart</i></a>
+                    </div>
+                  
+                  </div>
+                </div>
+                <div class="col 12 l5 offset-l1  right-align ">
+                  <h2 class="indigo-text push-s2 text-darken-4">Desserts</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa aliquam, aspernatur quaerat nobis minus ea eveniet praesentium quod laudantium at? Repellat hic reprehenderit non dolores porro quibusdam ut quasi minus?</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12 l4 push-l7 offset-l1 ">
+                  <div class="carousel center">
+                    <a class="carousel-item" href="#"><img class="" height="400" src="img/161.jpg"></a>
+                    <a class="carousel-item" href="#"><img class="" height="400" src="img/14.jpg"></a>
+                    <a class="carousel-item" href="#"><img class="" height="400" src="img/15.jpg"></a>
+                    <a class="carousel-item" href="#"><img class="" height="400" src="img/160.jpg"></a>
+                    <a class="carousel-item" href="#"><img class="" height="400" src="img/13.jpg"></a>
+                    <div class="carousel-fixed-item center">
+                      <a class="btn waves-effect transparent white-text text-darken-4 bttn-down"><i class="material-icons">add_shopping_cart</i></a>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="col 12 l6 pull-l5 left-align offset-l1">
+                  <h2 class="indigo-text text-darken-4">Snacks</h2>
+                  <p>
+                    Keep your friends close and keep your snacks closer. Caramel Desserts makes the best snacks out there are out there and no doubt you will come for more after your order. Work hard, snack often.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12 l4">
+                  <div class="carousel center">
+                    <a class="carousel-item" href="#"><img height="400" src="img/53.jpg"></a> 
+                    <a class="carousel-item" href="#"><img height="400" src="img/54.jpg"></a> 
+                    <a class="carousel-item" href="#"><img height="400" src="img/55.jpg"></a>
+                    <a class="carousel-item" href="#"><img height="400" src="img/32.jpg"></a>
+                    <a class="carousel-item" href="#"><img height="400" src="img/51.jpg"></a>
+                    <a class="carousel-item" href="#"><img height="400" src="img/33.jpg"></a>
+                    <div class="center">
+                      <a class="btn waves-effect transparent white-text text-darken-4 bttn-down"><i class="material-icons">add_shopping_cart</i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col 12 l6 offset-l1 right-align">
+                  <h2 class="indigo-text text-darken-4">Cupcakes</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas consectetur aut dolor a quidem deleniti nam nemo amet rerum libero. Perferendis nulla explicabo nobis qui obcaecati atque assumenda eius sint.
+                  </p>
+                  
+                </div>
+              </div>
+            </section>
+  <!-- parallax -->
+  <div class="hide-on-med-and-down parallax-container">
+    <div class="parallax">
+      <img src="img/42.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+  <div class="hide-on-large-only parallax-container">
+    <div class="parallax">
+      <img src="img/42.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+  <!-- services / tabs -->
+  <section class="container section scrollspy" id="services">
+    <div class="row">
+      <div class="col s12 l4">
+        <h2 class="indigo-text text-darken-4">What I do...</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis veritatis tenetur, quas nesciunt, amet esse earum assumenda enim perferendis ex pariatur provident dolorum quae inventore? Veniam culpa deserunt natus?</p>
+      </div>
+      <div class="col s12 l6 offset-l2">
+          <ul class="tabs">
+            <li class="tab col s6"><a href="#photography" class="btn transparent z-depth-0 indigo-text text-darken-4">Cakes</a></li>
+            <li class="tab col s6"><a href="#editing" class="btn transparent z-depth-0 indigo-text text-darken-4">Desserts</a></li>
+          </ul>
+          <div class="col s12" id="photography">
+            <p class="indog-text text-darken-4">CAKES</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis veritatis tenetur, quas nesciunt, amet esse earum assumenda enim perferendis ex pariatur provident dolorum quae inventore? Veniam culpa deserunt natus?</p>
+          </div>
+          <div class="col s12" id="editing">
+            <p class="indog-text text-darken-4">DESSERTS</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis veritatis tenetur, quas nesciunt, amet esse earum assumenda enim perferendis ex pariatur provident dolorum quae inventore? Veniam culpa deserunt natus?</p>
+          </div>
+      </div>
+    </div>
+  </section>
+  <!-- parallax -->
+  <div class="hide-on-med-and-down parallax-container">
+    <div class="parallax">
+      <img src="img/1.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+  <div class="hide-on-large-only parallax-container">
+    <div class="parallax">
+      <img src="img/1.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+  <!-- contact form -->
+  <section class="container section scrollspy" id="contact">
+    <div class="row">
+      <div class="col s12 l5">
+        <h2 class="indigo-text text-darken-4">Get In Touch</h2>
+        <p>Caramel desserts are her to serve you all the delicate desserts and cakes you can afford. Our support team are at your disposal 24/7. We are just a message away. Fill up the form to enquire or tell us what you want or issues you come across in our business. Thank you!</p>
+      </div>
+      <div class="col s12 l5 offset-l2">
+        <form action="/" method="POST">
+          <div class="input-field">
+            <i class="material-icons prefix">person</i>
+            <input type="text" id="name"  name="name" required>
+            <label for="name">Name*</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">call</i>
+            <input type="number" name="phone" id="phone">
+            <label for="phone">Phone No.*</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input type="email" name="email" id="email">
+            <label for="email">E-mail (optional) </label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">message</i>
+            <textarea name="message" id="message" class="materialize-textarea"></textarea>
+            <label for="message">Message</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">date_range</i>
+            <input type="text" id="date" name="datee" class="datepicker">
+            <label for="date">Choose a date you need me for...</label>
+          </div>
+          <div class="input-field">
+            <p>Services required...</p>
+            <p>
+              <label>
+              <input type="checkbox" name="cake">
+              <span>Cakes</span>
+              </label>
+            </p>
+            <p>
+              <label>
+              <input type="checkbox" name="desserts">
+              <span>Desserts</span>
+              </label>
+            </p>
+          </div>
+          <div class="input-field center">
+            <button class="btn waves-effect waves-light">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  
+  </section>
+  <!-- footer -->
+      <footer class="page-footer grey darken-3" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col s12 l6">
+              <h5>About Me</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis veritatis tenetur, quas nesciunt, amet esse earum assumenda enim perferendis ex pariatur provident dolorum quae inventore? Veniam culpa deserunt natus?</p>      
+            </div>
+            <div class="col s12 l4 offset-l2">
+              <h5>Connect</h5>
+              <ul>
+                <li><a href="" class="grey-text text-lighten-3"><i class="fab fa-facebook"></i>&nbsp Facebook</a></li>
+                <li><a href="" class="grey-text text-lighten-3"><i class="fab fa-twitter"></i>&nbsp Twitter</a></li>
+                <li><a href="" class="grey-text text-lighten-3"><i class="fab fa-instagram"></i>&nbsp Instagram</a></li>
+                <li><a href="" class="grey-text text-lighten-3"><i class="fab fa-snapchat"></i>&nbsp Snapchat</a></li>
+                <li><a href="" class="grey-text text-lighten-3"><i class="fab fa-linkedin"></i>&nbsp LinkedIn</a></li>
+              </ul>
+            </div>
+            </div>
+      </div>
+      <footer class="footer-copyright grey darken-4">
+        <div class="container center-align">
+          &copy; 2021 Powered by Jamsanz dot com
+        </div>
+      </footer>
+      </footer>
+  <!-- Compiled and minified JavaScript -->
+  <script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+  <script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.materialboxed').materialbox();
+        $('.parallax').parallax();
+        $('.tabs').tabs();
+        $('.datepicker').datepicker({
+          disableWeekends:true
+        });
+        $('.tooltipped').tooltip();
+        $('.scrollspy').scrollSpy();
+        $('.carousel').carousel({
+    indicators: true,
+  });
+  $('.fixed-action-btn').floatingActionButton({
+      hoverEnabled:false,  
+    });
+    $(".bttn-down").click(function() {
+      window.location="https://paystack.com/buy/cakes-ihniyp";
+});
+    });
+    
+  </script>
+</body>
+</html>
