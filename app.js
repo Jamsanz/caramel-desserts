@@ -48,6 +48,10 @@ app.post("/",(req, res)=>{
     });
 });
 
+app.get("/pay",(req, res)=>{
+    res.send(req.body);
+})
+
 app.listen(process.env.PORT || 3000, ()=>{
     console.log("server running on port 3000");
 });

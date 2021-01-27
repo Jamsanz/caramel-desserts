@@ -106,8 +106,8 @@
             </div>
             </ul>
           </div>
-          <div class="fixed-action-btn">
-            <a class="btn-floating btn indigo darken-4 z-depth-4">
+          <div class="fixed-action-btn ">
+            <a class="btn-floating btn waves-effect indigo darken-4 z-depth-4">
               <i class="fa fa-link" style="margin-top:12px; margin-left: px;"></i>
            </a>
            <ul>
@@ -118,7 +118,14 @@
             <li><a href="tel:+2347038236001" class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="Call me"><i style="margin-top:10px;" class="fa fa-phone"></i></a></li>
            </ul>
           </div>
-        </nav>     
+        </nav>
+        
+          
+
+  <!-- Tap Target Structure -->
+  <div class="" >
+    
+  </div>
       </header>
   <!-- photo / grid -->
           <section class="container section scrollspy" id="photos">
@@ -133,7 +140,7 @@
                     <a class="carousel-item"><img class="resp-img" height="400" src="img/155.jpg"></a>
                     <a class="carousel-item"><img class="resp-img" height="400" src="img/154.jpg"></a>
                     <div class="carousel-fixed-item center">
-                     <a class="btn waves-effect transparent white-text text-darken-4 bttn-down"><i class="material-icons">add_shopping_cart</i></a>
+                     <a class="btn waves-effect indigo darken-4 white-text text-darken-4 bttn-down"><i class="material-icons">add_shopping_cart</i></a>
                     </div>
                   
                   </div>
@@ -152,7 +159,7 @@
                     <a class="carousel-item"><img class="resp-img" height="400" src="img/203.jpg"></a>
                     <a class="carousel-item"><img class="resp-img" height="400" src="img/204.jpg"></a>
                     <div class="carousel-fixed-item center">
-                     <a class="btn waves-effect transparent white-text text-darken-4 bttn-down"><i class="material-icons">add_shopping_cart</i></a>
+                     <a class="btn waves-effect indigo darken-4 white-text text-darken-4 bttn-down"><i class="material-icons">add_shopping_cart</i></a>
                     </div>
                   
                   </div>
@@ -171,7 +178,7 @@
                     <a class="carousel-item" href="#"><img class="" height="400" src="img/160.jpg"></a>
                     <a class="carousel-item" href="#"><img class="" height="400" src="img/13.jpg"></a>
                     <div class="carousel-fixed-item center">
-                      <a class="btn waves-effect transparent white-text text-darken-4 bttn-down"><i class="material-icons">add_shopping_cart</i></a>
+                      <a class="btn waves-effect indigo darken-4 white-text text-darken-4 bttn-down"><i class="material-icons">add_shopping_cart</i></a>
                     </div>
                     
                   </div>
@@ -193,7 +200,7 @@
                     <a class="carousel-item" href="#"><img height="400" src="img/51.jpg"></a>
                     <a class="carousel-item" href="#"><img height="400" src="img/33.jpg"></a>
                     <div class="center">
-                      <a class="btn waves-effect transparent white-text text-darken-4 bttn-down"><i class="material-icons">add_shopping_cart</i></a>
+                      <a class="btn waves-effect indigo darken-4 white-text text-darken-4 bttn-down"><i class="material-icons">add_shopping_cart</i></a>
                     </div>
                   </div>
                 </div>
@@ -339,6 +346,7 @@
     <script src="js/materialize.js"></script>
   <script>
     $(document).ready(function(){
+      
         $('.sidenav').sidenav();
         $('.materialboxed').materialbox();
         $('.parallax').parallax();
@@ -346,6 +354,7 @@
         $('.datepicker').datepicker({
           disableWeekends:true
         });
+        $('.dropdown-trigger').dropdown();
         $('.tooltipped').tooltip();
         $('.scrollspy').scrollSpy();
         $('.carousel').carousel({
