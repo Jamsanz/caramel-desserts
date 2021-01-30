@@ -101,10 +101,7 @@
              </ul>
               
               <ul class="dropdown-content white" id="dropdown1">
-                <li style="width: 120px;" ><a class="" href="">Snacks</a></li>
-                <li style="width: 120px;" ><a class="" href="https://paystack.com/buy/cakes-ihniyp">Cakes</a></li>
-                <li style="width: 120px;" ><a class="" href="">Desserts</a></li>
-                <li style="width: 120px;" ><a class="" href="">Cupcakes</a></li>
+                
               </ul>
               <ul class="dropdown-content white" id="dropdown2">
                 <li ><a class="black-text" href="">Snacks</a></li>
@@ -115,7 +112,7 @@
             </ul>
             <ul class="sidenav grey lighten-2" id="mobile-links">
               <button class="btn-floating btn-small sidenav-close grey z-depth-1 lighten-2 black-text right" style="margin-right: 5px; margin-top: 5px;">x</button>
-              <li><img src="img/ceo.jpg" style="width:100px; height:100px; margin:10px 0px 0px 100px" class="circle center" alt=""><br>
+              <li><img src="img/ceo1.jpg" style="width:100px; height:100px; margin:10px 0px 0px 100px" class="circle center" alt=""><br>
                 <p class="black-text center bold" style="line-height: 20px;">C.E.O <br> <Span style="font-size: 20px; font-weight: bold;">Suaida Shehu Dalhatu</Span> <br>Caramel desserts</p>
                 <div style="text-align: center; margin-top: -25px;">
                 <a href="https://Instagram.com/caramel_desserts" class="btn-floating btn-small grey lighten-2 z-depth-0 black-text tooltipped"  style="margin: 10px 5px; padding:0px 5px; display: inline;"  data-tooltip="Instagram"><i  class="fab fa-instagram"></i></a>
@@ -127,9 +124,24 @@
               </div>
               </li>
               <hr>
+              
               <li><a href="#photos" class="sidenav-close">Photos</a></li>
               <li><a href="#services" class="sidenav-close">Services</a></li>
-              <li><a href="" class="dropdown-trigger" data-target="dropdown1">Order <i style="margin-right: 167px; font-size: 17px;" class="right material-icons black-text">shopping_cart</i></a></li>
+              <li>
+              <ul class="collapsible collapsible-accordion">
+                <li> 
+                  <a style="padding:0 32px;" class="collapsible-header">Order <i style="margin-right: 167px; font-size: 17px;" class="right material-icons black-text">shopping_cart</i></a>
+                  <div class="collapsible-body">
+                    <ul>
+                      <li><a class="" href="">Snacks</a></li>
+                      <li><a class="" href="https://paystack.com/buy/cakes-ihniyp">Cakes</a></li>
+                      <li><a class="" href="">Desserts</a></li>
+                      <li><a class="" href="">Cupcakes</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
               <li><a href="#contact" class="sidenav-close">Contact Me</a></li>
               <li><a href="#about"  class="sidenav-close">About Me</a></li>
               <!--<div style="display: flex; flex-wrap: wrap;">
@@ -379,7 +391,8 @@
     <script src="js/materialize.js"></script>
   <script>
     $(document).ready(function(){
-      
+    
+        $('.collapsible').collapsible();
         $('.sidenav').sidenav();
         $('.materialboxed').materialbox();
         $('.parallax').parallax();
