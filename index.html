@@ -30,6 +30,10 @@
       header{
         min-height: 600px;
       }
+      .txt{
+        position: relative;
+         top:350;
+      }
     }
     @media screen and (min-width: 1344px) {
       header{
@@ -63,6 +67,9 @@
       border-radius: 25px !important;
       z-index: 100 !important;
     }
+    ul#dropdown1.dropdown-content.white{
+      width: 120px !important;
+    }
    
   </style>
 </head>
@@ -83,31 +90,60 @@
               <li><a href="#services">Services</a></li>
               <li><a href="#contact">Contact</a></li>
               <li><a href="#about">About Me</a></li>
-              <li><a href="https://Instagram.com/caramel_desserts" class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="Instagram"><i style="margin-top:10px;" class="fab fa-instagram"></i></a></li>
-              <li><a href="https://twitter.com/_carameldessert" class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="Twitter"><i style="margin-top:10px;" class="fab fa-twitter"></i></a></li>
-              <li><a href="https://facebook.com/shehusuaida.dalhatu" class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="Facebook"><i style="margin-top:10px;" class="fab fa-facebook"></i></a></li>
-              <li><a href="https://wa.me/2347038236001" class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="Whatsapp Me"><i style="margin-top:10px;" class="fab fa-whatsapp"></i></a></li>
-              <li><a href="" class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="Call me"><i style="margin-top:10px;" class="fa fa-phone"></i></a></li>
+              <li><a  class="dropdown-trigger" data-target="dropdown2" href="#">Order<i class="large material-icons white-text right" style="margin-top: 6px;">shopping_cart</i></a></li>
+              <li><a  class="dropdown-trigger tooltipped" data-target="dropdown3" data-tooltip="Socials" href="#about">Socials<i class="large material-icons white-text right" style="margin-top: 6px;">arrow_drop_down</i></a></li>
+             <ul class="dropdown-content white lighten-2" id="dropdown3">
+              <li><a href="https://Instagram.com/caramel_desserts" class=" black-text" data-tooltip="Instagram"><i style="display: inline; color:black;" class="fab fa-instagram"></i> <span style="font-size: 14px;">Instagram</span></a></li>
+              <li><a href="https://twitter.com/_carameldessert" class=" black-text" data-tooltip="Twitter"><i style="display: inline; color: lightblue;" class="fab fa-twitter"></i>&nbspTwitter</a></li>
+              <li><a href="https://facebook.com/shehusuaida.dalhatu" class=" black-text" data-tooltip="Facebook"><i style="display: inline; color: blue;" class="fab fa-facebook"></i> <span style="font-size: 14px;">Facebook</span></a></li>
+              <li><a href="https://wa.me/2347038236001" class=" black-text" data-tooltip="Whatsapp Me"><i style="display: inline; color: green;" class="fab fa-whatsapp"></i> <span style="font-size: 14px;">Whatsapp</span></a></li>
+              <li><a href="tel:+2347038236001" class=" black-text" data-tooltip="Call me"><i style=" display: inline; color: darkgreen;" class="fa fa-phone"></i>&nbspPhone</a></li>
+             </ul>
               
+              <ul class="dropdown-content white" id="dropdown1">
+                <li style="width: 120px;" ><a class="" href="">Snacks</a></li>
+                <li style="width: 120px;" ><a class="" href="https://paystack.com/buy/cakes-ihniyp">Cakes</a></li>
+                <li style="width: 120px;" ><a class="" href="">Desserts</a></li>
+                <li style="width: 120px;" ><a class="" href="">Cupcakes</a></li>
+              </ul>
+              <ul class="dropdown-content white" id="dropdown2">
+                <li ><a class="black-text" href="">Snacks</a></li>
+                <li ><a class="black-text" href="https://paystack.com/buy/cakes-ihniyp">Cakes</a></li>
+                <li ><a class="black-text" href="">Desserts</a></li>
+                <li ><a class="black-text" href="">Cupcakes</a></li>
+              </ul>
             </ul>
             <ul class="sidenav grey lighten-2" id="mobile-links">
-              <button class="btn-floating sidenav-close grey lighten-2 black-text right" style="margin-right: 5px; margin-top: 5px;">x</button>
+              <button class="btn-floating btn-small sidenav-close grey z-depth-1 lighten-2 black-text right" style="margin-right: 5px; margin-top: 5px;">x</button>
+              <li><img src="img/ceo.jpg" style="width:100px; height:100px; margin:10px 0px 0px 100px" class="circle center" alt=""><br>
+                <p class="black-text center bold" style="line-height: 20px;">C.E.O <br> <Span style="font-size: 20px; font-weight: bold;">Suaida Shehu Dalhatu</Span> <br>Caramel desserts</p>
+                <div style="text-align: center; margin-top: -25px;">
+                <a href="https://Instagram.com/caramel_desserts" class="btn-floating btn-small grey lighten-2 z-depth-0 black-text tooltipped"  style="margin: 10px 5px; padding:0px 5px; display: inline;"  data-tooltip="Instagram"><i  class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/_carameldessert" class="btn-floating btn-small grey lighten-2 z-depth-0 black-text tooltipped" style="margin: 10px 5px; padding:0px 5px; display: inline;" data-tooltip="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://facebook.com/shehusuaida.dalhatu" class="btn-floating btn-small grey lighten-2 z-depth-0 black-text tooltipped" style="margin: 10px 5px; padding:0px 5px; display: inline;" style="margin: 10px 5px; padding:0px 5px; display: inline;" data-tooltip="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/2347038236001" class="btn-floating btn-small grey lighten-2 z-depth-0 black-text tooltipped" style="margin: 10px 5px; padding:0px 5px; display: inline;" style="margin: 10px 5px; padding:0px 5px; display: inline;" data-tooltip="Whatsapp me"><i class="fab fa-whatsapp"></i></a>
+                <a href="tel:+2347038236001" class="btn-floating btn-small grey lighten-2 z-depth-0 black-text tooltipped" style="margin: 10px 5px; padding:0px 5px; display: inline;" style="margin: 10px 5px; padding:0px 5px; display: inline;" data-tooltip="Call me"><i class="fa fa-phone"></i></a>
+                <a href="mailto:Ssdtu47@gmail.com" class="btn-floating btn-small grey lighten-2 z-depth-0 black-text tooltipped" style="margin: 10px 5px; padding:0px 5px; display: inline;" style="margin: 10px 5px; padding:0px 5px; display: inline;" data-tooltip="Mail me"><i class="fa fa-envelope"></i></a>
+              </div>
+              </li>
+              <hr>
               <li><a href="#photos" class="sidenav-close">Photos</a></li>
               <li><a href="#services" class="sidenav-close">Services</a></li>
+              <li><a href="" class="dropdown-trigger" data-target="dropdown1">Order <i style="margin-right: 167px; font-size: 17px;" class="right material-icons black-text">shopping_cart</i></a></li>
               <li><a href="#contact" class="sidenav-close">Contact Me</a></li>
               <li><a href="#about"  class="sidenav-close">About Me</a></li>
-              <div style="display: flex; flex-wrap: wrap;">
-              <li><a href="https://Instagram.com/caramel_desserts" class="btn-floating btn-small grey lighten-2 z-depth-0 black-text tooltipped" data-tooltip="Instagram"><i style="" class="fab fa-instagram"></i></a></li>
+              <!--<div style="display: flex; flex-wrap: wrap;">
+              <li><a href="https://Instagram.com/caramel_desserts" class="btn-floating btn-small grey lighten-2 z-depth-0 black-text tooltipped" data-tooltip="Instagram"><i  class="fab fa-instagram"></i></a></li>
               <li><a href="https://twitter.com/_carameldessert" class="btn-floating btn-small grey lighten-2 z-depth-0 black-text tooltipped" data-tooltip="Twitter"><i class="fab fa-twitter"></i></a></li>
               <li><a href="https://facebook.com/shehusuaida.dalhatu" class="btn-floating btn-small grey lighten-2 z-depth-0 black-text tooltipped" data-tooltip="Facebook"><i class="fab fa-facebook"></i></a></li>
               <li><a href="https://wa.me/2347038236001" class="btn-floating btn-small grey lighten-2 z-depth-0 black-text tooltipped" data-tooltip="Whatsapp me"><i class="fab fa-whatsapp"></i></a></li>
-              <li><a href="tel:+2347038236001" class="btn-floating btn-small grey lighten-2 z-depth-0 black-text tooltipped" data-tooltip="Call me"><i style="" class="fa fa-phone"></i></a></li>
+              <li><a href="tel:+2347038236001" class="btn-floating btn-small grey lighten-2 z-depth-0 black-text tooltipped" data-tooltip="Call me"><i class="fa fa-phone"></i></a></li>
               <li><a href="mailto:Ssdtu47@gmail.com" class="btn-floating btn-small grey lighten-2 z-depth-0 black-text tooltipped" data-tooltip="Mail me"><i class="fa fa-envelope"></i></a></li>
-            </div>
+            </div>-->
             </ul>
           </div>
-          <div class="fixed-action-btn ">
-            <a class="btn-floating btn waves-effect indigo darken-4 z-depth-4">
+          <div class="fixed-action-btn">
+            <a class="btn-floating btn waves-effect pulse indigo darken-4 z-depth-4">
               <i class="fa fa-link" style="margin-top:12px; margin-left: px;"></i>
            </a>
            <ul>
@@ -123,9 +159,6 @@
           
 
   <!-- Tap Target Structure -->
-  <div class="" >
-    
-  </div>
       </header>
   <!-- photo / grid -->
           <section class="container section scrollspy" id="photos">
