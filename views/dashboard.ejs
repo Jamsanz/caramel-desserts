@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <!-- font awesome -->
+     <link rel="stylesheet" href="fontawesome/css/all.css">
+     <script src="fontawesome/js/all.js"></script>
+     <script src="fontawesome/metadata/icons.json"></script>
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="css/materialize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper container" style="overflow: auto !important;">
+            <a href="" class="brand-logo">Caramel Desserts</a>
+        </div>
+    </nav>
+    <div class="container">
+    <table>
+
+        <thead>
+          <tr>
+              <th>Name</th>
+              <th>Phone</th>
+              <th>E-mail</th>
+              <th>Message</th>
+              <th>Services</th>
+              <th>Date Request</th>
+              <th>Received</th>
+          </tr>
+        </thead>
+        <% results.forEach(result=>{%>
+        <tbody>
+          <tr>
+            <td><%=result.name%></td>
+            <td><%=result.phone%></td>
+            <td><%=result.email%></td>
+            <td><%=result.message%></td>
+            <td><%=result.service%></td>
+            <td><%=result.date%></td>
+            <td><%=result.received%></td>
+          </tr>
+        </tbody>
+        <%});%>
+      </table>
+    </div>
+</body>
+</html>

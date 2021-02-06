@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <script src="fontawesome/js/all.js"></script>
+    <script src="fontawesome/metadata/icons.json"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="css/materialize.css">
+    <title>Caramel Desserts</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <style>
+        body{
+            background-image:url('img/Radiant-Gradient.svg');
+            background-repeat:no-repeat;
+            background-size: cover;
+        }
+        img{
+            margin-top: -70;
+        }
+        .card{
+            opacity: 1;
+        }
+        input{
+            border-color: white !important;
+        }
+        label{
+            color: white !important;
+        }
+ 
+
+    </style>
+</head>
+<body>
+   
+    <div class="row" style="margin-top: 20vh;">
+        <div class="col s12 m8 l4 offset-m2 offset-l4">
+            <div class="card z-depth-4 transparent" style="border-radius: 20px; border-color: white;">
+            
+                <div class="card-action white-text transparent center bounce-in-fwd" style=" border-radius: 20px;">
+                    <img width="100" height="100" class="responsive-img circle" src="img/caramel.jpg" alt="">
+                    <h3 class="">Login</h3>
+                </div>
+    
+                <div class="card-content">
+                    <form action="/login" method="POST">
+                    <div class="form-field">
+                        <label for="username">Username</label>
+                        <input type="text" name="username">
+                    </div><br>
+    
+                    <div class="form-field">
+                        <label for="password">Password</label>
+                        <input type="password" name="password">
+                    </div><br>
+    
+                    <div class="form-field center">
+                        <button class="btn waves-effect waves-dark transparent z-depth-2" style=" width:30%; border-radius: 20px;">Login</button>
+                    </div><br>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>
