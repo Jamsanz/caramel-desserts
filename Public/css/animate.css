@@ -118,3 +118,31 @@
             animation-timing-function: ease-out;
   }
 }
+#sailorTableArea{
+        overflow-x: auto;
+        overflow-y: auto;
+    }
+    #sailorTable{
+        white-space: normal;
+    }
+    tbody {
+        display:block;
+        overflow:auto;
+    }
+    
+    @media screen and (max-width: 670px) {
+        thead, tbody tr {
+                display:table;
+                width:100%;
+                table-layout:auto;
+                overflow:auto;
+            }
+      }
+      @media screen and (min-width: 1344px) {
+        thead, tbody tr {
+                display:table;
+                width:100%;
+                table-layout:fixed;
+                overflow:auto;
+            }
+      }
