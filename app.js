@@ -78,8 +78,11 @@ app.post("/",(req, res)=>{
 
     if (req.body.cake=='on') {
         service='cake'
-    } else {
+    } else if (req.body.desserts=='on') {
         service='desserts'
+    }
+    else{
+        service=''
     }
 
     const orderz = new Order({
