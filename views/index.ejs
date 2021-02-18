@@ -13,6 +13,15 @@
   <link rel="stylesheet" href="css/materialize.css">
   <title>Caramel Desserts</title>
   <style>
+     .se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(img/Preloader_8.gif) center no-repeat #fff;
+}
     header{
       background: url(img/CEO.jpg);
       background-size: cover;
@@ -70,11 +79,12 @@
     ul#dropdown1.dropdown-content.white{
       width: 120px !important;
     }
-   
   </style>
 </head>
 <body>
   
+  <!-- preloader -->
+  <div class="se-pre-con"></div>
   <!-- navbar -->
       <header>
         <nav class="nav-wrapper transparent">
@@ -546,7 +556,9 @@
   <!-- Compiled and minified JavaScript -->
   <script src="js/jquery.js"></script>
     <script src="js/materialize.js"></script>
+    
   <script>
+      $(".se-pre-con").fadeOut("slow");
     $(document).ready(function(){
         $('#select').on('click',(e)=>{
           e.preventDefault();
