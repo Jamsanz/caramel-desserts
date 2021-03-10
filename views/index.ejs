@@ -71,7 +71,7 @@
     div.carousel.center{
       margin-top: -8vh;
     }
-    .bttn-down{
+    .bttn-snack,.bttn-cake,.bttn-cupcake,.bttn-dessert{
       margin-top: 320px;
       border-radius: 25px !important;
       z-index: 100 !important;
@@ -114,10 +114,10 @@
                 
               </ul>
               <ul class="dropdown-content white" id="dropdown2">
-                <li ><a class="black-text" href="">Snacks</a></li>
-                <li ><a class="black-text" href="https://paystack.com/buy/cakes-ihniyp">Cakes</a></li>
-                <li ><a class="black-text" href="">Desserts</a></li>
-                <li ><a class="black-text" href="">Cupcakes</a></li>
+                <li ><a class="black-text" href="https://paystack.com/buy/snacks-slkzah">Snacks</a></li>
+                <li ><a class="black-text" href="https://paystack.com/buy/cake-rkexaw">Cakes</a></li>
+                <li ><a class="black-text" href="https://paystack.com/buy/desserts-dvdcso">Desserts</a></li>
+                <li ><a class="black-text" href="https://paystack.com/buy/cupcakes-qypitq">Cupcakes</a></li>
               </ul>
             </ul>
             <ul class="sidenav grey lighten-2" id="mobile-links">
@@ -143,10 +143,10 @@
                   <a style="padding:0 32px;" class="collapsible-header">Order <i style="margin-right: 167px; font-size: 17px;" class="right material-icons black-text">shopping_cart</i></a>
                   <div class="collapsible-body">
                     <ul>
-                      <li><a class="" href="">Snacks</a></li>
-                      <li><a class="" href="https://paystack.com/buy/cakes-ihniyp">Cakes</a></li>
-                      <li><a class="" href="">Desserts</a></li>
-                      <li><a class="" href="">Cupcakes</a></li>
+                      <li><a class="" href="https://paystack.com/buy/cake-rkexaw">Cakes</a></li>
+                      <li><a class="" href="https://paystack.com/buy/desserts-dvdcso">Desserts</a></li>
+                      <li><a class="" href="https://paystack.com/buy/snacks-slkzah">Snacks</a></li>
+                      <li><a class="" href="https://paystack.com/buy/cupcakes-qypitq">Cupcakes</a></li>
                     </ul>
                   </div>
                 </li>
@@ -196,7 +196,7 @@
                     <a class="carousel-item"><img class="resp-img" height="400" src="img/155.jpg"></a>
                     <a class="carousel-item"><img class="resp-img" height="400" src="img/154.jpg"></a>
                     <div class="carousel-fixed-item center">
-                     <a class="btn waves-effect indigo darken-4 white-text text-darken-4 bttn-down"><i class="material-icons">add_shopping_cart</i></a>
+                     <a class="btn waves-effect indigo darken-4 white-text text-darken-4 bttn-cake"><i class="material-icons">add_shopping_cart</i></a>
                     </div>
                   
                   </div>
@@ -215,7 +215,7 @@
                     <a class="carousel-item"><img class="resp-img" height="400" src="img/203.jpg"></a>
                     <a class="carousel-item"><img class="resp-img" height="400" src="img/204.jpg"></a>
                     <div class="carousel-fixed-item center">
-                     <a class="btn waves-effect indigo darken-4 white-text text-darken-4 bttn-down"><i class="material-icons">add_shopping_cart</i></a>
+                     <a class="btn waves-effect indigo darken-4 white-text text-darken-4 bttn-dessert"><i class="material-icons">add_shopping_cart</i></a>
                     </div>
                   
                   </div>
@@ -235,7 +235,7 @@
                     <a class="carousel-item" href="#"><img class="" height="400" src="img/14.jpg"></a>
                     <a class="carousel-item" href="#"><img class="" height="400" src="img/13.jpg"></a>
                     <div class="carousel-fixed-item center">
-                      <a class="btn waves-effect indigo darken-4 white-text text-darken-4 bttn-down"><i class="material-icons">add_shopping_cart</i></a>
+                      <a class="btn waves-effect indigo darken-4 white-text text-darken-4 bttn-snack"><i class="material-icons">add_shopping_cart</i></a>
                     </div>
                     
                   </div>
@@ -257,7 +257,7 @@
                     <a class="carousel-item" href="#"><img height="400" src="img/54.jpg"></a>
                     <a class="carousel-item" href="#"><img height="400" src="img/55.jpg"></a>
                     <div class="center">
-                      <a class="btn waves-effect indigo darken-4 white-text text-darken-4 bttn-down"><i class="material-icons">add_shopping_cart</i></a>
+                      <a class="btn waves-effect indigo darken-4 white-text text-darken-4 bttn-cupcake"><i class="material-icons">add_shopping_cart</i></a>
                     </div>
                   </div>
                 </div>
@@ -581,11 +581,21 @@
   $('.fixed-action-btn').floatingActionButton({
       hoverEnabled:false,  
     });
-    $(".bttn-down").click(function() {
-      window.location="https://paystack.com/buy/cakes-ihniyp";
-});
+    $(".bttn-cake").click(function() {
+      window.location="https://paystack.com/buy/cake-rkexaw";
+          });
+    $(".bttn-snack").click(function() {
+      window.location="https://paystack.com/buy/snacks-slkzah";
+          });
+    $(".bttn-dessert").click(function() {
+      window.location="https://paystack.com/buy/desserts-dvdcso";
+          });
+    $(".bttn-cupcake").click(function() {
+      window.location="https://paystack.com/buy/cupcakes-qypitq";
+          });
     });
     
   </script>
 </body>
 </html>
+
